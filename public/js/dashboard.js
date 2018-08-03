@@ -1,4 +1,4 @@
-const urlBase = 'https://cop4331-9.herokuapp.com'
+const urlBase = 'https://polished-pos.herokuapp.com'
 
 var index = 0;
 var editing = 0;
@@ -56,7 +56,7 @@ function displayContact()
 //   Search for contact by Name.
 function searchContact()
 {
-    var url_login = 'https://cop4331-9.herokuapp.com/contacts';
+    var url_login = urlBase + '/contacts';
 	let search = $('#search').val().toLowerCase();
 	$("#filter-text").text("Filtered by the term: \"" + search + "\".");
 	$("#filter-info").show();
@@ -125,7 +125,7 @@ function editContact()
 //   Delete Contact.
 function deleteContact()
 {
-	var url_delete = 'https://cop4331-9.herokuapp.com/delete';
+	var url_delete = urlBase + 'delete';
 	 
 	 $.post(url_delete, {id:results[index].contactid}, function (res, status) {
           show('contact-info-flex', false);
@@ -142,7 +142,7 @@ function addContact()
 		editing = 0;
 	}
 
-     var url_add = 'https://cop4331-9.herokuapp.com/add';
+     var url_add = urlBase + '/add';
 
      let contactData = {
           firstName: $('#addFirst').val().trim(),
