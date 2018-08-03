@@ -1,0 +1,19 @@
+{
+	"name": "cop4331-9",
+	"description": "Cop 4331 group-9 Small Project",
+	"version": "1.0.0",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Neruelin/cop4331-9.git"
+	},
+	"dependencies": {
+		"bcrypt": "^2.0.1",
+		"bootstrap": "^4.1.1",
+		"cookie-parser": "^1.4.3",
+		"csprng": "^0.1.2",
+		"express": "^4.0.0",
+		"express-session": "^1.15.6",
+		"pg": "^7.4.3"
+	}
+}
