@@ -144,6 +144,7 @@ app.post('/signup', function (req, res) {
 
 		client.query(query, (err, res) => {
 			if (err) {
+				console.log("Error in signup query execution:");
 				console.log(err.stack);
 			}
 		});
