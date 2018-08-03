@@ -135,7 +135,7 @@ app.get('/logout', function (req, res) {
 
 app.post('/signup', function (req, res) {
 	console.log("recieving signup info:");
-	console.log(userdata.username);
+	console.log(req.body.username);
 	if (checkInput(req.body)) {
 		res.status(400).send();
 	} else {
